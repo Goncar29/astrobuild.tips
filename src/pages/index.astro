@@ -1,15 +1,15 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import Header from '../components/Header.astro';
-import Hero from '../components/Hero.astro'
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
 
-const allPost = await Astro.glob('../content/*.md');
+const allPost = await Astro.glob("../content/tips/*.md");
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<Header title='AstroBuild.tips'/>
+		<Header title="AstroBuild.tips" />
 		<svg
 			class="astro-a"
 			width="495"
@@ -46,6 +46,7 @@ const allPost = await Astro.glob('../content/*.md');
 						title={item?.frontmatter.title}
 						time={item?.frontmatter.pubDate}
 						tags={item?.frontmatter.tags}
+						slug={item?.frontmatter.slug}
 					/>
 				))
 			}
@@ -72,7 +73,6 @@ const allPost = await Astro.glob('../content/*.md');
 		height: auto;
 		z-index: -1;
 	}
-
 
 	.link-card-grid {
 		display: grid;
