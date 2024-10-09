@@ -4,9 +4,9 @@ interface Props {
     title: string;
 }
 
-const Header = ({ title }: Props) => {
+export const Header = ({ title }: Props) => {
     return (
-        <div className="mx-auto max-w-screen-xl p-4 py-8">
+        <div className="mx-auto p-4 py-8 dark:bg-gray-900">
             <h1 className="mx-4">
                 <span className="font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-purple-400 to-purple-600">
                     {title}
@@ -16,4 +16,3 @@ const Header = ({ title }: Props) => {
     );
 };
 
-export default Header;
