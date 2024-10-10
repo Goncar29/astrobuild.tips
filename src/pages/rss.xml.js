@@ -5,7 +5,7 @@ export async function GET(context) {
     const posts = await getCollection('tips');
     return rss({
         title: 'AstroBuld.tips',
-        descripcion: 'My First Page',
+        description: 'My First Page',
         site: context.site,
         items: posts.map((post) => ({
             ...post.data,
