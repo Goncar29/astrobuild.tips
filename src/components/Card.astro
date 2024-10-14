@@ -1,11 +1,11 @@
 ---
+import { fecha } from "../utils/functions";
 interface Props {
 	title: string;
 	time: string;
 	tags: string[];
 	slug: string;
 }
-
 const { title, time, tags, slug } = Astro.props;
 ---
 
@@ -14,14 +14,16 @@ const { title, time, tags, slug } = Astro.props;
 >
 	<div class="rounded-[10px] bg-white p-4 !pt-20 sm:p-6 dark:bg-gray-900">
 		<time
-			datetime="2022-10-10"
+			datetime={fecha(time)}
 			class="block text-xs text-gray-500 dark:text-gray-400"
 		>
-			{time}
+			{fecha(time)}
 		</time>
 
 		<a href={`/posts/${slug}`}>
-			<h3 class="mt-0.5 text-lg font-medium text-gray-900 dark:text-white">
+			<h3
+				class="mt-0.5 text-lg font-medium text-gray-900 dark:text-white"
+			>
 				{title}
 			</h3>
 		</a>
