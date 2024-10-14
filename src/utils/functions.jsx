@@ -1,12 +1,10 @@
-const options = {
-    weekday: 'long',
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-};
-
 export function fecha(date) {
-    const event = new Date(date);
-    const newDate = event.toLocaleDateString('es-UY', options);
+    const newDate = new Date(date).toLocaleDateString('es-UY', {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+
     return newDate.charAt(0).toUpperCase() + newDate.slice(1);
 }
