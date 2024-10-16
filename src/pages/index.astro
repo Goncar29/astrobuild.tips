@@ -45,7 +45,7 @@ const posts = (await getCollection("tips")).sort(
         <ul role="list" class="link-card-grid">
             {
                 posts.map((post) => (
-                    <Card
+                    <Card 
                         title={post.data.title}
                         time={post.data.pubDate}
                         tags={post.data.tags}

@@ -68,7 +68,7 @@
 
     <li>
         <a
-            href="/"
+            href="https://github.com/Goncar29?tab=repositories"
             rel="noreferrer"
             target="_blank"
             class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"

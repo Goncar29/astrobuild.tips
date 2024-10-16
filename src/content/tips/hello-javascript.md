@@ -7,6 +7,6 @@ tags: ['JavaScript']
 layout: "../../layouts/Posts.astro"
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ea at ut quam, expedita magni aliquid! Quibusdam rem officiis vero, quis tenetur, neque assumenda expedita sunt aut eius numquam libero?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ea at ut quam, expedita magni aliquid! **Quibusdam rem officiis vero, quis tenetur, neque assumenda expedita sunt aut eius numquam libero?**
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ea at ut quam, expedita magni aliquid! Quibusdam rem officiis vero, quis tenetur, neque assumenda expedita sunt aut eius numquam libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ea at ut quam, expedita magni aliquid! Quibusdam rem officiis vero, quis tenetur, neque assumenda expedita sunt aut eius numquam libero?
